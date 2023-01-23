@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { defineProps } from 'vue';
 import codeImg from '@/assets/code-img.jpg';
-import { library } from '@fortawesome/fontawesome-svg-core';
 
 interface TheStory {
   title?: string;
@@ -169,7 +168,8 @@ const props = defineProps<{
   }
 
   &__timestamp {
-    grid-column: 3;
+    justify-self: right;
+    grid-column: 1 / span 3;
     grid-row: 3;
     font-size: 15px;
     color: #ffffff;
